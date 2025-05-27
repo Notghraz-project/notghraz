@@ -16,6 +16,7 @@
       color: #f1f1f1;
       direction: rtl;
       scroll-behavior: smooth;
+
     }
 
     /* متن بالا سمت چپ */
@@ -33,25 +34,7 @@
       z-index: 9999;
       user-select: none;
     }
-
-    /* ساعت و تاریخ بالا سمت راست */
-    #iran-time {
-      position: fixed;
-      top: 15px;
-      right: 15px;
-      background-color: rgba(0, 0, 0, 0.5);
-      padding: 12px 18px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
-      font-family: 'Vazir', Tahoma, sans-serif;
-      font-size: 1rem;
-      color: #FFD700;
-      z-index: 9999;
-      user-select: none;
-      white-space: nowrap;
-      text-align: center;
-      min-width: 160px;
-    }
+  
 
     .intro-header {
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
@@ -158,21 +141,16 @@
   </style>
 </head>
 <body>
-
-  <div class="quote-box">
-    <p class="quote-text">ملتی که تاریخ خود را نداند محکوم به تکرار آن است</p>
-    <p class="quote-author">- جورج سانتایانا</p>
-  </div>
-
-  <!-- اینجا اضافه کردم ساعت و تاریخ ایران -->
-  <div id="iran-time">در حال بارگذاری...</div>
-
+  
   <section class="intro-header">
+    
     <h1>نطق راز</h1>
     <p>وب‌سایتی برای کشف و درک عمیق تاریخ ایران با نگاهی نوین و جذاب.  
     هر سلسله، هر پادشاه و هر رخداد تاریخی، داستانی دارد که باید شنیده شود.</p>
-    
-    <a href="#dynasty-section" class="scroll-down" title="برو به سلسله‌ها">&#x25BC;</a>
+        <!-- اینجا کادر زمان اضافه شده -->
+        <div id="iran-time" aria-label="زمان فعلی ایران"></div>
+
+
   </section>
 
   <main id="dynasty-section">
@@ -185,7 +163,6 @@
     </a>
   </main>
 
-  <!-- اضافه کن قبل از </footer> -->
   <section style="text-align: center; margin-top: 60px;">
     <h2 style="color: #FFD700; font-size: 2rem;">ما را در اینستاگرام دنبال کنید</h2>
     <a href="https://www.instagram.com/notghraz/" target="_blank" title="نطق راز در اینستاگرام" 
@@ -206,11 +183,8 @@
 
   <script>
     function updateIranTime() {
-      // زمان فعلی UTC را می‌گیریم
       const now = new Date();
 
-      // تبدیل به زمان ایران (ایران +3:30 از UTC و +1 ساعت برای ساعت تابستانی اگر هست)
-      // برای سادگی اینجا از toLocaleString با زمان منطقه "Asia/Tehran" استفاده می‌کنیم
       const options = {
         timeZone: 'Asia/Tehran',
         hour12: false,
@@ -223,13 +197,12 @@
       };
 
       const iranTime = now.toLocaleString('fa-IR', options);
-
-      // نمایش در div
       document.getElementById('iran-time').textContent = iranTime;
     }
 
-    updateIranTime(); // اجرا سریع در بارگذاری صفحه
-    setInterval(updateIranTime, 1000); // بروزرسانی هر ثانیه
+    updateIranTime();
+    setInterval(updateIranTime, 1000);
   </script>
-</body>
+
 </html>
+
