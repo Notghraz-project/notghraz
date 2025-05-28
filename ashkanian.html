@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نطق راز | اشکانیان</title>
+
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+    body {
+      font-family: 'Vazir', Tahoma, sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+      scroll-behavior: smooth;
+    }
+
+    .intro-header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                 url('images/ashkanian.jpg') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .intro-header h1 {
+      font-family: 'Vazir', serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      color: #FFD700;
+      margin-bottom: 0.3em;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .intro-header p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      color: #fff8b0;
+      font-weight: 500;
+      line-height: 1.5;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: 50px auto 0 auto;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #FFD700;
+      top: 0;
+      bottom: 0;
+      right: 50%;
+      margin-right: -3px;
+      border-radius: 3px;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -12px;
+      background-color: #FFD700;
+      border: 4px solid #1e1e1e;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .right {
+      right: 50%;
+    }
+
+    .left {
+      right: 0;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background: #222;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      transform: scale(1.03);
+    }
+
+    .timeline-content h3 {
+      color: #FFD700;
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .timeline-content p {
+      margin: 15px 0;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .timeline-content a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .timeline-content a:hover {
+      color: #fff;
+    }
+
+    .king-section {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .king-section h2 {
+      color: #FFD700;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .king-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .king-card {
+      background: #222;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .king-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .king-card h3 {
+      color: #FFD700;
+      margin: 10px 0;
+    }
+
+    .king-card p {
+      color: #ddd;
+      line-height: 1.5;
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      background: #FFD700;
+      color: #121212;
+      padding: 15px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s ease;
+      z-index: 100;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #aaa;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="intro-header">
+    <h1>اشکانیان</h1>
+    <p>عصر طلایی هنر جنگاوری (۲۴۷ پیش از میلاد تا ۲۲۴ میلادی)</p>
+  </section>
+
+  <main>
+    <div class="timeline">
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>ظهور پارت‌ها</h3>
+          <p>چگونه اشک اول توانست با شکست سلوکیان، پایه‌های حکومت اشکانی را بنا نهد.</p>
+          <a href="ashkanian/zohoor.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>گسترش قلمرو</h3>
+          <p>دوران فتوحات مهرداد اول و دوم و گسترش قلمرو از رود فرات تا رود سند</p>
+          <a href="ashkanian/gostresh.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>نبرد با روم</h3>
+          <p>رویارویی‌های تاریخی با امپراتوری روم و پیروزی‌های درخشان سورنا</p>
+          <a href="ashkanian/rome_war.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>هنر و فرهنگ</h3>
+          <p>شکوفایی هنر و معماری اشکانی و احیای سنت‌های ایرانی</p>
+          <a href="ashkanian/art.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="king-section">
+      <h2>شاهان برجسته اشکانی</h2>
+      <div class="king-cards">
+        <div class="king-card">
+          <h3>اشک اول</h3>
+          <p>بنیانگذار سلسله اشکانی و رهایی‌بخش پارت (۲۴۷-۲۱۷ پ.م)</p>
+        </div>
+
+        <div class="king-card">
+          <h3>مهرداد اول</h3>
+          <p>بزرگترین شاه اشکانی و گسترش‌دهنده امپراتوری (۱۷۱-۱۳۸ پ.م)</p>
+        </div>
+
+        <div class="king-card">
+          <h3>مهرداد دوم</h3>
+          <p>احیاگر قدرت اشکانی و برقرارکننده روابط با چین (۱۲۴-۸۸ پ.م)</p>
+        </div>
+
+        <div class="king-card">
+          <h3>اردوان پنجم</h3>
+          <p>آخرین شاه بزرگ اشکانی که در نبرد با اردشیر بابکان کشته شد (۲۱۳-۲۲۴ م)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="dynasties.html" class="back-button">بازگشت به صفحه دوران باستان</a>
+
+  <footer>
+    <p>© 2025 نطق راز | طراحی شده با عشق</p>
+  </footer>
+</body>
+</html>

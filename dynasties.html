@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نطق راز | دوران باستان</title>
+
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+    body {
+      font-family: 'Vazir', Tahoma, sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('images/selseleha.png') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      color: #fff8b0;
+      max-width: 800px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+    .dynasties {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .dynasty-card {
+      background: #1e1e1e;
+      border: 2px solid #FFD700;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .dynasty-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+    }
+
+    .dynasty-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .dynasty-content {
+      padding: 20px;
+    }
+
+    .dynasty-content h2 {
+      color: #FFD700;
+      margin: 0 0 15px 0;
+      font-size: 1.8rem;
+    }
+
+    .dynasty-content p {
+      color: #ddd;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .dynasty-period {
+      color: #FFD700;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      display: block;
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      background: #FFD700;
+      color: #121212;
+      padding: 15px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      margin-top: 50px;
+    }
+
+    footer p {
+      color: #aaa;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>دوران باستان</h1>
+    <p>سفری در تاریخ کهن سرزمین پارس</p>
+  </section>
+
+  <div class="dynasties">
+    <a href="mad_ha.html" class="dynasty-card">
+      <img src="images/drafsh_mad_ha.png" alt="مادها" class="dynasty-image">
+      <div class="dynasty-content">
+        <h2>مادها</h2>
+        <p>نخستین حکومت متحد ایرانی که پایه‌گذار تمدن باستانی ایران بودند.</p>
+        <span class="dynasty-period">۷۰۸ تا ۵۵۰ پیش از میلاد</span>
+      </div>
+    </a>
+
+    <a href="haxamanesh.html" class="dynasty-card">
+      <img src="images/derafshshabaz.png" alt="هخامنشیان" class="dynasty-image">
+      <div class="dynasty-content">
+        <h2>هخامنشیان</h2>
+        <p>نخستین امپراتوری بزرگ جهان باستان که از هند تا مصر را در بر می‌گرفت.</p>
+        <span class="dynasty-period">۵۵۹ تا ۳۳۰ پیش از میلاد</span>
+      </div>
+    </a>
+
+    <a href="selukian.html" class="dynasty-card">
+      <img src="images/solookian.png" alt="سلوکیان" class="dynasty-image">
+      <div class="dynasty-content">
+        <h2>سلوکیان</h2>
+        <p>دوره‌ای از حکومت یونانی‌تباران که با تلفیق فرهنگ ایرانی و یونانی همراه بود.</p>
+        <span class="dynasty-period">۳۱۲ تا ۶۳ پیش از میلاد</span>
+      </div>
+    </a>
+
+    <a href="ashkanian.html" class="dynasty-card">
+      <img src="images/ashkanian.jpg" alt="اشکانیان" class="dynasty-image">
+      <div class="dynasty-content">
+        <h2>اشکانیان</h2>
+        <p>سلسله‌ای که هنر جنگاوری و معماری را به اوج رساند.</p>
+        <span class="dynasty-period">۲۴۷ پیش از میلاد تا ۲۲۴ میلادی</span>
+      </div>
+    </a>
+
+    <a href="sasanian.html" class="dynasty-card">
+      <img src="images/derafshkavian.png" alt="ساسانیان" class="dynasty-image">
+      <div class="dynasty-content">
+        <h2>ساسانیان</h2>
+        <p>آخرین امپراتوری ایرانی پیش از اسلام با شکوه فرهنگی و هنری بی‌نظیر.</p>
+        <span class="dynasty-period">۲۲۴ تا ۶۵۱ میلادی</span>
+      </div>
+    </a>
+  </div>
+
+  <a href="historical_periods.html" class="back-button">بازگشت به صفحه دوره های تاریخی</a>
+
+  <footer>
+    <p>© 2025 نطق راز | طراحی شده با عشق</p>
+  </footer>
+</body>
+</html>

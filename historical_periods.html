@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نطق راز | دوره‌های تاریخی ایران</title>
+
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+    body {
+      font-family: 'Vazir', Tahoma, sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                  url('images/selseleha.png') no-repeat center center/cover;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      color: #fff8b0;
+      max-width: 800px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+    .periods-container {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .period-card {
+      background: #1e1e1e;
+      border: 2px solid #FFD700;
+      border-radius: 15px;
+      margin-bottom: 30px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .period-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.2);
+    }
+
+    .period-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .period-content {
+      padding: 25px;
+    }
+
+    .period-content h2 {
+      color: #FFD700;
+      margin: 0 0 15px 0;
+      font-size: 1.8rem;
+    }
+
+    .period-content p {
+      color: #ddd;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      background: #FFD700;
+      color: #121212;
+      padding: 15px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      margin-top: 50px;
+    }
+
+    footer p {
+      color: #aaa;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>دوره‌های تاریخی ایران</h1>
+    <p>سفری در گذر زمان، از کهن‌ترین روزگاران تا امروز</p>
+  </section>
+
+  <div class="periods-container">
+    <a href="dynasties.html" class="period-card">
+      <img src="images/takhtejamshid_background.png" alt="دوران باستان" class="period-image">
+      <div class="period-content">
+        <h2>دوران باستان از مادها تا ساسانیان</h2>
+        <p>دورانی درخشان از تاریخ ایران که با ظهور حکومت مادها آغاز شد و با سه امپراتوری بزرگ هخامنشیان، اشکانیان و ساسانیان به اوج شکوه خود رسید. این دوره با گنجینه‌ای از هنر، معماری و فرهنگ غنی ایرانی همراه است.</p>
+      </div>
+    </a>
+  
+    <a href="#" class="period-card">
+      <img src="images/khelafat_eslami.png" alt="دوران اسلامی" class="period-image">
+      <div class="period-content">
+        <h2>دوران اسلامی از خلافت ابوبکر تا خلافت عباسیان</h2>
+        <p>پس از ورود اسلام به ایران، سلسله‌های ایرانی با تلفیق فرهنگ کهن ایرانی و اسلامی، دوره‌ای از شکوفایی علمی، هنری و ادبی را رقم زدند. از خلافت عمر تا ابومسلم خراسانی، هر یک میراث‌دار بخشی از این تاریخ پرافتخارند.</p>
+      </div>
+    </a>
+  
+    <a href="#" class="period-card">
+      <img src="images/modern_iran.jpg" alt="ورود مغول ها به ایران" class="period-image">
+      <div class="period-content">
+        <h2>ورود مغول ها به ایران</h2>
+        <p>دوران مغول از حمله خونین چنگیزخان تا پایان حکومت ایلخانان در ایران.</p>
+      </div>
+    </a>
+  
+    <a href="#" class="period-card">
+      <img src="images/modern_iran.jpg" alt="دوران معاصر" class="period-image">
+      <div class="period-content">
+        <h2>دوران معاصر از صفوی تا جمهوری اسلامی </h2>
+        <p>دوران معاصر ایران با تحولات عمیق اجتماعی، سیاسی و فرهنگی همراه بوده است. از حکومت شاه عباس صفوی تا تشکیل حکومت پهلوی تا انقلاب اسلامی و تشکیل جمهوری اسلامی، هر دوره روایتگر بخشی از تاریخ معاصر ایران است.</p>
+      </div>
+    </a>
+  </div>
+  
+  <a href="index.html" class="back-button">بازگشت به صفحه اصلی</a>
+
+  <footer>
+    <p>© 2025نطق راز | طراحی شده با عشق به وطن </p>
+  </footer>
+</body>
+</html> 

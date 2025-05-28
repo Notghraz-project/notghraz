@@ -1,0 +1,337 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نطق راز | هخامنشیان</title>
+
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+    body {
+      font-family: 'Vazir', Tahoma, sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+      scroll-behavior: smooth;
+    }
+
+    .intro-header {
+      background: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+        url('images/derafshshabaz.png') no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .intro-header h1 {
+      font-family: 'Vazir', serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      color: #FFD700;
+      margin-bottom: 0.3em;
+      text-shadow: 2px 2px 6px #000;
+    }
+
+    .intro-header p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      color: #fff8b0;
+      font-weight: 500;
+      line-height: 1.5;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: 50px auto 0 auto;
+      background-color: #1e1e1e;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: 40px auto;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      background-color: #FFD700;
+      top: 0;
+      bottom: 0;
+      right: 50%;
+      margin-right: -3px;
+      border-radius: 3px;
+    }
+
+    .timeline-item {
+      padding: 10px 40px;
+      position: relative;
+      width: 50%;
+      box-sizing: border-box;
+    }
+
+    .timeline-item::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      right: -12px;
+      background-color: #FFD700;
+      border: 4px solid #1e1e1e;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .right {
+      right: 50%;
+    }
+
+    .left {
+      right: 0;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background: #222;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+
+    .timeline-content:hover {
+      transform: scale(1.03);
+    }
+
+    .timeline-content h3 {
+      color: #FFD700;
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .timeline-content p {
+      margin: 15px 0;
+      line-height: 1.6;
+      color: #ddd;
+    }
+
+    .timeline-content a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    .timeline-content a:hover {
+      color: #fff;
+    }
+
+    .king-section {
+      text-align: center;
+      margin: 60px 0;
+    }
+
+    .king-section h2 {
+      color: #FFD700;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+    }
+
+    .king-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .king-card {
+      background: #222;
+      border: 2px solid #FFD700;
+      border-radius: 12px;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .king-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .king-card h3 {
+      color: #FFD700;
+      margin: 10px 0;
+    }
+
+    .king-card p {
+      color: #ddd;
+      line-height: 1.5;
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      background: #FFD700;
+      color: #121212;
+      padding: 15px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s ease;
+      z-index: 100;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #aaa;
+      user-select: none;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="intro-header">
+    <h1>هخامنشیان</h1>
+    <p>نخستین امپراتوری بزرگ جهان باستان و بنیانگذار تمدن ایرانی</p>
+  </section>
+
+  <main>
+    <div class="timeline">
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>تولد یک قدرت</h3>
+          <p>داستان شگفت‌انگیز تولد کوروش بزرگ و رؤیای آستیاگ که سرنوشت ایران را تغییر داد.</p>
+          <a href="haxamanesh/birth_of_power.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>تأسیس امپراتوری</h3>
+          <p>کوروش بزرگ در سال ۵۵۹ پیش از میلاد با متحد کردن پارس‌ها و مادها، بنیان امپراتوری هخامنشی را گذاشت.</p>
+          <a href="haxamanesh/tasis-emperatori.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>از حکومت تا مرگ کوروش</h3>
+          <p>از یکپارچگی قلمرو تا مرگ بزرگترین پادشاه ایران زمین</p>
+          <a href="haxamanesh/hokoomat_kurowsh_ta_marg.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>از کمبوجیه تا فتح مصر</h3>
+          <p>چگونگی رسیدن کمبوجیه به تخت پادشاهی تا فتح مصر.</p>
+          <a href="haxamanesh/az_kaboojie_ta_mesr.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>داریوش بزرگ</h3>
+          <p>داریوش بزرگ و عصر شکوفایی هخامنشیان</p>
+          <a href="haxamanesh/darius_bozorg.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>خشایار شاه هخامنشی</h3>
+          <p>فرمانروایی خشایارشا و جنگ‌های بزرگ با یونان</p>
+          <a href="haxamanesh/khashayarshah.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>اردشیر یکم و خشایارشا دوم</h3>
+          <p>از اردشیر یکم فرزند داریوش یکم تا فرزندش خشایارشا دوم</p>
+          <a href="haxamanesh/ardeshir_yekom.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>از سغدیانس تا داریوش دوم</h3>
+          <p>از حکومت سغدیانس شورشی تا داریوش دوم</p>
+          <a href="haxamanesh/soghdians_ta_darius_2.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-content">
+          <h3>اردشیر دوم تا فرزندش اردشیر سوم</h3>
+          <p>دوران حکومت اردشیر دوم تا دوران کوتاه فرزندش</p>
+          <a href="haxamanesh/ardeshir2_aredeshir3.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-content">
+          <h3>مرگ آخرین هخامنشی</h3>
+          <p>مرگ داریوش سوم و پایان سلسله هخامنشی</p>
+          <a href="haxamanesh/darius3_payanhaxamanesh.html">مطالعه بیشتر...</a>
+        </div>
+      </div>
+    </div>
+
+    <section class="king-section">
+      <h2>پادشاهان بزرگ هخامنشی</h2>
+
+      <div class="king-cards">
+        <div class="king-card">
+          <h3>کوروش بزرگ</h3>
+          <p>بنیانگذار امپراتوری هخامنشی، موسس یک فرهنگ بزرگ و تمدن کهن.</p>
+        </div>
+
+        <div class="king-card">
+          <h3>داریوش بزرگ</h3>
+          <p>پادشاهی که امپراتوری را گسترش داد و ساختار حکومتی منظم ایجاد کرد.</p>
+        </div>
+
+        <div class="king-card">
+          <h3>خشایارشا</h3>
+          <p>فرمانروایی که با یونان جنگید و تاریخ باستان را رقم زد.</p>
+        </div>
+
+
+    </section>
+  </main>
+
+  <a href="dynasties.html" class="back-button">بازگشت به صفحه ی دوران باستان</a>
+
+  <footer>
+    © 2025 نطق راز | همه حقوق محفوظ است
+  </footer>
+</body>
+</html>

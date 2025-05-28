@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نطق راز | ساسانیان</title>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+        body {
+            font-family: 'Vazir', Tahoma, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #f1f1f1;
+            line-height: 1.6;
+        }
+
+        .intro-header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('images/derafshkavian.png') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .intro-header h1 {
+            font-family: 'Vazir', serif;
+            font-weight: 900;
+            font-size: 3.5rem;
+            color: #FFD700;
+            margin-bottom: 0.3em;
+            text-shadow: 2px 2px 6px #000;
+        }
+
+        .intro-header p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            color: #fff8b0;
+            font-weight: 500;
+            line-height: 1.5;
+            text-shadow: 1px 1px 5px #000;
+        }
+
+        main {
+            padding: 40px 20px;
+            max-width: 1100px;
+            margin: 50px auto 0 auto;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 40px auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #FFD700;
+            top: 0;
+            bottom: 0;
+            right: 50%;
+            margin-right: -3px;
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: #FFD700;
+            border: 4px solid #1e1e1e;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .right {
+            right: 50%;
+        }
+
+        .left {
+            right: 0;
+        }
+
+        .timeline-content {
+            padding: 20px;
+            background: #222;
+            border: 2px solid #FFD700;
+            border-radius: 12px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.03);
+        }
+
+        .timeline-content h3 {
+            color: #FFD700;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        .timeline-content p {
+            margin: 15px 0;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        .timeline-content a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .timeline-content a:hover {
+            color: #fff;
+        }
+
+        .king-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .king-section h2 {
+            color: #FFD700;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .king-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .king-card {
+            background: #222;
+            border: 2px solid #FFD700;
+            border-radius: 12px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .king-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .king-card h3 {
+            color: #FFD700;
+            margin: 10px 0;
+        }
+
+        .king-card p {
+            color: #ddd;
+            line-height: 1.5;
+        }
+
+        .back-button {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            background: #FFD700;
+            color: #121212;
+            padding: 15px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+            transition: transform 0.3s ease;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+            color: #aaa;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <section class="intro-header">
+        <h1>ساسانیان</h1>
+        <p>آخرین امپراتوری بزرگ ایران باستان (۲۲۴ تا ۶۵۱ میلادی)</p>
+    </section>
+
+    <main>
+        <div class="timeline">
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>قیام اردشیر</h3>
+                    <p>چگونه اردشیر بابکان توانست اشکانیان را شکست دهد و امپراتوری ساسانی را بنیان نهد.</p>
+                    <a href="sasanian/ghiam.html">مطالعه بیشتر...</a>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>عصر شاپور</h3>
+                    <p>دوران طلایی شاپور اول و پیروزی‌های درخشان بر امپراتوری روم</p>
+                    <a href="sasanian/shapur.html">مطالعه بیشتر...</a>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>اصلاحات خسرو</h3>
+                    <p>اصلاحات گسترده خسرو انوشیروان در نظام اداری، مالیاتی و نظامی</p>
+                    <a href="sasanian/khosrow.html">مطالعه بیشتر...</a>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>واپسین روزها</h3>
+                    <p>جنگ‌های طولانی با روم، ظهور اسلام و سقوط امپراتوری ساسانی</p>
+                    <a href="sasanian/end.html">مطالعه بیشتر...</a>
+                </div>
+            </div>
+        </div>
+
+        <section class="king-section">
+            <h2>شاهنشاهان بزرگ ساسانی</h2>
+            <div class="king-cards">
+                <div class="king-card">
+                    <h3>اردشیر بابکان</h3>
+                    <p>بنیانگذار شاهنشاهی ساسانی و احیاگر شکوه ایران (۲۲۴-۲۴۲)</p>
+                </div>
+
+                <div class="king-card">
+                    <h3>شاپور یکم</h3>
+                    <p>فاتح بزرگ و شکست‌دهنده سه امپراتور روم (۲۴۲-۲۷۲)</p>
+                </div>
+
+                <div class="king-card">
+                    <h3>خسرو انوشیروان</h3>
+                    <p>دادگرترین پادشاه ساسانی و اصلاح‌گر نظام کشور (۵۳۱-۵۷۹)</p>
+                </div>
+
+                <div class="king-card">
+                    <h3>خسرو پرویز</h3>
+                    <p>آخرین شاه قدرتمند ساسانی و فرمانروای عصر طلایی (۵۹۰-۶۲۸)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="dynasties.html" class="back-button">بازگشت به صفحه دوران باستان</a>
+
+    <footer>
+        <p>© 2025 نطق راز | طراحی شده با عشق</p>
+    </footer>
+</body>
+</html> 
