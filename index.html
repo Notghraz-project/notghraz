@@ -194,6 +194,38 @@
       color: #aaa;
       user-select: none;
     }
+
+    /* Media Queries for Mobile Devices */
+    @media screen and (max-width: 768px) {
+      .historical-quote {
+        max-width: 250px;
+        padding: 15px;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      .historical-quote p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+
+      .historical-quote .author {
+        font-size: 0.9rem;
+        margin-top: 5px;
+      }
+
+      .historical-quote::before {
+        font-size: 2rem;
+        top: 2px;
+        right: 5px;
+      }
+
+      .historical-quote::after {
+        font-size: 2rem;
+        bottom: -8px;
+        left: 5px;
+      }
+    }
   </style>
 </head>
 <body>
