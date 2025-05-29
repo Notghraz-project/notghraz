@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>نطق راز | مادها</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
@@ -126,17 +126,25 @@
             color: #ddd;
         }
 
-        .timeline-content a {
+        /* دکمه یکنواخت و جذاب */
+        a.button-link {
             display: inline-block;
-            margin-top: 10px;
-            color: #FFD700;
-            text-decoration: none;
+            margin-top: 15px;
+            background-color: #FFD700;
+            color: #121212;
             font-weight: bold;
-            transition: color 0.3s ease;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
         }
 
-        .timeline-content a:hover {
-            color: #fff;
+        a.button-link:hover {
+            background-color: #ffec70;
+            color: #000;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 235, 70, 0.9);
         }
 
         .king-section {
@@ -190,12 +198,68 @@
             text-decoration: none;
             font-weight: bold;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-            transition: transform 0.3s ease;
-            z-index: 100;
         }
 
-        .back-button:hover {
-            transform: scale(1.1);
+        /* Media Queries for Mobile Devices */
+        @media screen and (max-width: 768px) {
+            .intro-header h1 {
+                font-size: 2.5rem;
+            }
+
+            .intro-header p {
+                font-size: 1.1rem;
+            }
+
+            .timeline::after {
+                right: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-right: 70px;
+                padding-left: 25px;
+            }
+
+            .timeline-item::after {
+                right: 18px;
+            }
+
+            .right {
+                right: 0%;
+            }
+
+            .left {
+                right: 0%;
+            }
+
+            .timeline-content {
+                width: 100%;
+                padding: 15px;
+            }
+
+            .timeline-content h3 {
+                font-size: 1.3rem;
+            }
+
+            .king-cards {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+
+            .king-card {
+                margin: 10px 0;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            main {
+                padding: 20px 15px;
+                margin: 30px auto 0 auto;
+            }
+
+            .king-section h2 {
+                font-size: 2rem;
+            }
         }
 
         footer {
@@ -220,7 +284,7 @@
                 <div class="timeline-content">
                     <h3>شکل‌گیری اتحاد مادی</h3>
                     <p>چگونه دیااکو توانست قبایل پراکنده ماد را متحد کند و نخستین پایتخت را در هگمتانه بنا نهد.</p>
-                    <a href="mad_ha/ettehad.html">مطالعه بیشتر...</a>
+                    <a href="mad_ha/shekl_giri_madha.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -228,7 +292,7 @@
                 <div class="timeline-content">
                     <h3>نبرد با آشوریان</h3>
                     <p>فرااخشتره چگونه توانست با متحد کردن سپاه ماد، امپراتوری قدرتمند آشور را شکست دهد.</p>
-                    <a href="mad_ha/nabard_ashur.html">مطالعه بیشتر...</a>
+                    <a href="mad_ha/nabard_ba_ashurian.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -236,7 +300,7 @@
                 <div class="timeline-content">
                     <h3>عصر طلایی مادها</h3>
                     <p>دوران اوج قدرت مادها و گسترش قلمرو از شرق تا غرب ایران</p>
-                    <a href="mad_ha/asr_talayi.html">مطالعه بیشتر...</a>
+                    <a href="mad_ha/asr_talayi_madha.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -244,7 +308,7 @@
                 <div class="timeline-content">
                     <h3>سقوط و میراث</h3>
                     <p>چگونه کوروش هخامنشی توانست بر مادها پیروز شود و میراث آنها را حفظ کند</p>
-                    <a href="mad_ha/soghoot.html">مطالعه بیشتر...</a>
+                    <a href="mad_ha/miras_soghoot.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
         </div>
@@ -255,21 +319,25 @@
                 <div class="king-card">
                     <h3>دیااکو</h3>
                     <p>بنیانگذار سلسله ماد و سازنده هگمتانه (۷۰۸-۶۵۵ پ.م)</p>
+                    <a href="mad_ha/diako.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
 
                 <div class="king-card">
                     <h3>فرورتیش</h3>
                     <p>گسترش‌دهنده قلمرو ماد و فاتح پارس (۶۵۵-۶۳۳ پ.م)</p>
+                    <a href="mad_ha/farvartish.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
 
                 <div class="king-card">
                     <h3>هوخشتره</h3>
                     <p>بزرگترین پادشاه ماد و فاتح نینوا (۶۲۵-۵۸۵ پ.م)</p>
+                    <a href="mad_ha/havakhshatare.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
 
                 <div class="king-card">
-                    <h3>ایشتوویگو</h3>
+                    <h3>ایشتویگو (آستیاگ)/h3>
                     <p>آخرین پادشاه ماد که به دست کوروش شکست خورد (۵۸۵-۵۵۰ پ.م)</p>
+                    <a href="mad_ha/astiag.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
         </section>
@@ -281,4 +349,4 @@
         <p>© 2025 نطق راز | طراحی شده با عشق</p>
     </footer>
 </body>
-</html> 
+</html>

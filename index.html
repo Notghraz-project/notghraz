@@ -35,6 +35,62 @@
       user-select: none;
     }
   
+    /* استایل برای نقل قول تاریخی */
+    .historical-quote {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: linear-gradient(135deg, rgba(30, 30, 30, 0.95), rgba(20, 20, 20, 0.95));
+      padding: 25px;
+      border-radius: 15px;
+      max-width: 350px;
+      border: 1px solid rgba(255, 215, 0, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      z-index: 100;
+      backdrop-filter: blur(5px);
+    }
+
+    .historical-quote p {
+      margin: 0;
+      color: #FFD700;
+      font-family: 'IranNastaliq', 'Vazir', Tahoma, sans-serif;
+      font-size: 1.4rem;
+      line-height: 2;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .historical-quote .author {
+      color: rgba(255, 215, 0, 0.6);
+      font-size: 1.1rem;
+      font-family: 'IranNastaliq', 'Vazir', Tahoma, sans-serif;
+      text-align: left;
+      margin-top: -2px;
+      opacity: 0.8;
+      font-weight: 300;
+      position: relative;
+      top: -5px;
+    }
+
+    .historical-quote::before {
+      content: '"';
+      position: absolute;
+      top: 5px;
+      right: 10px;
+      font-size: 3rem;
+      color: rgba(255, 215, 0, 0.2);
+      font-family: Arial, sans-serif;
+    }
+
+    .historical-quote::after {
+      content: '"';
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      font-size: 3rem;
+      color: rgba(255, 215, 0, 0.2);
+      font-family: Arial, sans-serif;
+    }
 
     .intro-header {
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
@@ -153,6 +209,11 @@
 
   </section>
 
+  <div class="historical-quote">
+    <p>ملتی که تاریخ خود را نداند، محکوم به تکرار آن است</p>
+    <p class="author">جورج سانتایانا</p>
+  </div>
+
   <main id="dynasty-section">
     <h2>بخش ها</h2>
 
@@ -160,6 +221,12 @@
     <a href="historical_periods.html" class="dynasty-card">
       <h3>سلسله ها</h3>
       <p>از هخامنشیان تا به امروز...</p>
+    </a>
+
+    <!-- قالب میان پرده ها -->
+    <a href="#" class="dynasty-card" style="margin-top: 30px;">
+      <h3>میان پرده ها</h3>
+      <p>روایت‌های کوتاه از لحظات سرنوشت‌ساز تاریخ ایران...</p>
     </a>
   </main>
 
