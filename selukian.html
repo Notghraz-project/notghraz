@@ -6,7 +6,7 @@
     <title>نطق راز | سلوکیان</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
-
+    
         body {
             font-family: 'Vazir', Tahoma, sans-serif;
             margin: 0;
@@ -15,10 +15,10 @@
             color: #f1f1f1;
             line-height: 1.6;
         }
-
+    
         .intro-header {
             background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('images/solookian.png') no-repeat center center/cover;
+                        url('images/drafsh_mad_ha.png') no-repeat center center/cover;
             height: 400px;
             display: flex;
             flex-direction: column;
@@ -27,7 +27,7 @@
             text-align: center;
             padding: 0 20px;
         }
-
+    
         .intro-header h1 {
             font-family: 'Vazir', serif;
             font-weight: 900;
@@ -36,7 +36,7 @@
             margin-bottom: 0.3em;
             text-shadow: 2px 2px 6px #000;
         }
-
+    
         .intro-header p {
             font-size: 1.3rem;
             max-width: 700px;
@@ -45,7 +45,7 @@
             line-height: 1.5;
             text-shadow: 1px 1px 5px #000;
         }
-
+    
         main {
             padding: 40px 20px;
             max-width: 1100px;
@@ -54,13 +54,13 @@
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
         }
-
+    
         .timeline {
             position: relative;
             max-width: 900px;
             margin: 40px auto;
         }
-
+    
         .timeline::after {
             content: '';
             position: absolute;
@@ -72,14 +72,14 @@
             margin-right: -3px;
             border-radius: 3px;
         }
-
+    
         .timeline-item {
             padding: 10px 40px;
             position: relative;
             width: 50%;
             box-sizing: border-box;
         }
-
+    
         .timeline-item::after {
             content: '';
             position: absolute;
@@ -92,15 +92,15 @@
             border-radius: 50%;
             z-index: 1;
         }
-
+    
         .right {
             right: 50%;
         }
-
+    
         .left {
             right: 0;
         }
-
+    
         .timeline-content {
             padding: 20px;
             background: #222;
@@ -109,54 +109,62 @@
             position: relative;
             transition: transform 0.3s ease;
         }
-
+    
         .timeline-content:hover {
             transform: scale(1.03);
         }
-
+    
         .timeline-content h3 {
             color: #FFD700;
             margin-top: 0;
             font-size: 1.5rem;
         }
-
+    
         .timeline-content p {
             margin: 15px 0;
             line-height: 1.6;
             color: #ddd;
         }
-
-        .timeline-content a {
+    
+        /* دکمه یکنواخت و جذاب */
+        a.button-link {
             display: inline-block;
-            margin-top: 10px;
-            color: #FFD700;
-            text-decoration: none;
+            margin-top: 15px;
+            background-color: #FFD700;
+            color: #121212;
             font-weight: bold;
-            transition: color 0.3s ease;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
         }
-
-        .timeline-content a:hover {
-            color: #fff;
+    
+        a.button-link:hover {
+            background-color: #ffec70;
+            color: #000;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 235, 70, 0.9);
         }
-
+    
         .king-section {
             text-align: center;
             margin: 60px 0;
         }
-
+    
         .king-section h2 {
             color: #FFD700;
             font-size: 2.5rem;
             margin-bottom: 30px;
         }
-
+    
         .king-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             padding: 20px;
         }
-
+    
         .king-card {
             background: #222;
             border: 2px solid #FFD700;
@@ -164,21 +172,21 @@
             padding: 20px;
             transition: transform 0.3s ease;
         }
-
+    
         .king-card:hover {
             transform: translateY(-10px);
         }
-
+    
         .king-card h3 {
             color: #FFD700;
             margin: 10px 0;
         }
-
+    
         .king-card p {
             color: #ddd;
             line-height: 1.5;
         }
-
+    
         .back-button {
             position: fixed;
             bottom: 30px;
@@ -190,70 +198,14 @@
             text-decoration: none;
             font-weight: bold;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+            transition: transform 0.3s ease;
+            z-index: 100;
         }
-
-        /* Media Queries for Mobile Devices */
-        @media screen and (max-width: 768px) {
-            .intro-header h1 {
-                font-size: 2.5rem;
-            }
-
-            .intro-header p {
-                font-size: 1.1rem;
-            }
-
-            .timeline::after {
-                right: 31px;
-            }
-
-            .timeline-item {
-                width: 100%;
-                padding-right: 70px;
-                padding-left: 25px;
-            }
-
-            .timeline-item::after {
-                right: 18px;
-            }
-
-            .right {
-                right: 0%;
-            }
-
-            .left {
-                right: 0%;
-            }
-
-            .timeline-content {
-                width: 100%;
-                padding: 15px;
-            }
-
-            .timeline-content h3 {
-                font-size: 1.3rem;
-            }
-
-            .king-cards {
-                grid-template-columns: 1fr;
-                padding: 10px;
-            }
-
-            .king-card {
-                margin: 10px 0;
-                width: 100%;
-                box-sizing: border-box;
-            }
-
-            main {
-                padding: 20px 15px;
-                margin: 30px auto 0 auto;
-            }
-
-            .king-section h2 {
-                font-size: 2rem;
-            }
+    
+        .back-button:hover {
+            transform: scale(1.1);
         }
-
+    
         footer {
             margin-top: 80px;
             text-align: center;
@@ -276,7 +228,7 @@
                 <div class="timeline-content">
                     <h3>تأسیس حکومت سلوکی</h3>
                     <p>چگونه سلوکوس اول توانست پس از مرگ اسکندر، بخش شرقی امپراتوری را تصاحب کند.</p>
-                    <a href="selukian/tasis.html">مطالعه بیشتر...</a>
+                    <a href="selukian/tasis_hokoomat_selukian.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -284,7 +236,7 @@
                 <div class="timeline-content">
                     <h3>عصر شکوفایی</h3>
                     <p>دوران طلایی سلوکیان و ساخت شهرهای یونانی-ایرانی در سراسر قلمرو</p>
-                    <a href="selukian/shokoofayi.html">مطالعه بیشتر...</a>
+                    <a href="selukian/asr_shekufayi.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -292,7 +244,7 @@
                 <div class="timeline-content">
                     <h3>جنگ با پارت‌ها</h3>
                     <p>نبردهای طولانی با اشکانیان و از دست دادن تدریجی قلمرو شرقی</p>
-                    <a href="selukian/jang_parthian.html">مطالعه بیشتر...</a>
+                    <a href="selukian/jang_ba_partha.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -300,7 +252,7 @@
                 <div class="timeline-content">
                     <h3>افول و فروپاشی</h3>
                     <p>چگونه درگیری‌های داخلی و فشار خارجی به پایان حکومت سلوکی انجامید</p>
-                    <a href="selukian/foroopashi.html">مطالعه بیشتر...</a>
+                    <a href="selukian/ofool_foroopashi.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
         </div>
@@ -311,21 +263,25 @@
                 <div class="king-card">
                     <h3>سلوکوس اول نیکاتور</h3>
                     <p>بنیانگذار سلسله سلوکی و سازنده شهر سلوکیه (۳۱۲-۲۸۱ پ.م)</p>
+                    <a href="#" class="button-link">مطالعه بیشتر...</a>
                 </div>
 
                 <div class="king-card">
                     <h3>آنتیوخوس سوم</h3>
                     <p>بزرگترین پادشاه سلوکی که قلمرو را تا هند گسترش داد (۲۲۳-۱۸۷ پ.م)</p>
+                    <a href="#" class="button-link">مطالعه بیشتر...</a>
                 </div>
 
                 <div class="king-card">
                     <h3>آنتیوخوس چهارم اپیفانس</h3>
                     <p>پادشاه مقتدری که سعی در گسترش فرهنگ یونانی داشت (۱۷۵-۱۶۴ پ.م)</p>
+                    <a href="#" class="button-link">مطالعه بیشتر...</a>
                 </div>
 
                 <div class="king-card">
                     <h3>آنتیوخوس هفتم سیدتس</h3>
                     <p>آخرین پادشاه قدرتمند سلوکی که با اشکانیان جنگید (۱۳۸-۱۲۹ پ.م)</p>
+                    <a href="#" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
         </section>
