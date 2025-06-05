@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>افول و فروپاشی</title>
+
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+    body {
+      font-family: 'Vazir', Tahoma, sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                  url("#") no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      color: #fff692;
+      max-width: 800px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+    .story-container {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.2);
+    }
+
+    .story-section {
+      margin-bottom: 40px;
+      padding: 20px;
+      border-right: 3px solid #FFD700;
+      background: #222;
+      border-radius: 0 15px 15px 0;
+    }
+
+    .story-section h2 {
+      color: #FFD700;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .story-section p {
+      line-height: 1.8;
+      color: #ddd;
+      text-align: justify;
+      margin-bottom: 15px;
+    }
+
+    /* بخش جدید - جنگ با پارت‌ها */
+    .battle-hero {
+      background: linear-gradient(135deg, #b8860b 0%, #000000 100%);
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 25px;
+      border-radius: 0 0 40px 40px;
+      box-shadow: 0 5px 25px rgba(255, 215, 0, 0.7);
+    }
+
+    .battle-hero h1 {
+      font-size: 3.5rem;
+      color: #fffacd;
+      text-shadow: 3px 3px 10px #5c4300;
+      margin-bottom: 15px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+
+    .battle-hero p {
+      font-size: 1.3rem;
+      max-width: 700px;
+      color: #ffecb3;
+      line-height: 1.7;
+      text-shadow: 1px 1px 5px #5c4300;
+      font-style: italic;
+    }
+
+    /* ریسپانسیو */
+    @media (max-width: 768px) {
+      .hero {
+        height: 40vh;
+        padding: 0 15px;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.1rem;
+        max-width: 100%;
+      }
+
+      .battle-hero {
+        height: 35vh;
+        padding: 0 15px;
+        border-radius: 0 0 30px 30px;
+      }
+      .battle-hero h1 {
+        font-size: 2rem;
+      }
+      .battle-hero p {
+        font-size: 1rem;
+        max-width: 100%;
+      }
+
+      .story-container {
+        max-width: 95%;
+        margin: 30px auto;
+        padding: 20px 15px;
+      }
+
+      .story-section {
+        margin-bottom: 25px;
+        padding: 15px;
+        border-right: none;
+        border-bottom: 3px solid #FFD700;
+        border-radius: 15px 15px 0 0;
+      }
+
+      .story-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+      }
+
+      .story-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .back-button {
+        bottom: 20px;
+        left: 20px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+      .hero p {
+        font-size: 0.9rem;
+      }
+      .battle-hero h1 {
+        font-size: 1.5rem;
+      }
+      .battle-hero p {
+        font-size: 0.85rem;
+      }
+      .story-section h2 {
+        font-size: 1.2rem;
+      }
+      .story-section p {
+        font-size: 0.9rem;
+      }
+      .back-button {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+        bottom: 15px;
+        left: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <section class="hero" >
+        <h1>جنگ‌های سلوکیان با پارت‌ها</h1>
+        <p>نبردهای طولانی با اشکانیان و از دست دادن تدریجی قلمرو شرقی</p>
+      </section>
+      
+    <div class="story-section">
+        <h2>دلایل داخلی افول سلوکیان</h2>
+        <p>
+          پس از گذشت چند دهه از تأسیس امپراتوری، سلوکیان با مشکلات عمیق داخلی روبه‌رو شدند که بنیان حکومت‌شان را سست کرد. ضعف قدرت مرکزی، نزاع‌های درونی میان اعضای خاندان سلوکی و رقابت‌های سیاسی باعث شد تا حکومت نتواند انسجام و ثبات لازم را حفظ کند. همچنین فساد گسترده اداری و نبود مدیریت موثر، توان اداره قلمرو وسیع را کاهش داد. این مسائل، شورش‌ها و قیام‌های محلی را تحریک کرد و کنترل حکومت مرکزی بر مناطق دوردست کم‌رنگ شد.
+        </p>
+      </div>
+      
+      <div class="story-section">
+        <h2>فشارهای نظامی و تهدیدهای خارجی</h2>
+        <p>
+          در کنار مشکلات داخلی، امپراتوری سلوکی با فشارهای نظامی پی‌درپی از سوی دشمنان خارجی مواجه بود. اشکانیان در شرق، با نظامی قدرتمند و سازمان‌یافته، به‌صورت مستمر قلمروهای شرقی سلوکیان را تهدید می‌کردند. همچنین، قبایل و حکومت‌های محلی در شمال و جنوب، همواره چالشی جدی برای ثبات و امنیت امپراتوری بودند. این نبردهای مداوم، منابع مالی و نیروی نظامی سلوکیان را تحلیل برد و باعث کاهش توان دفاعی آنان شد.
+        </p>
+      </div>
+      
+      <div class="story-section">
+        <h2>از دست دادن تدریجی قلمروها</h2>
+        <p>
+          ضعف داخلی و فشارهای خارجی به تدریج باعث از هم پاشیدن یکپارچگی امپراتوری سلوکی شد. بخش‌های شرقی به دست اشکانیان افتاد و این قدرت تازه‌نفس جایگزین سلوکیان در این مناطق شد. در غرب، حکومت‌های محلی مانند بطلمیوس‌ها در مصر و دیگر شاهنشاهی‌های مستقل در سوریه و بین‌النهرین به‌تدریج بر قلمروهای پیشین سلوکی مسلط شدند. این تکه‌تکه شدن سرزمین‌ها، اقتدار حکومت مرکزی را به شدت تضعیف کرد و امپراتوری را در مسیر افول قرار داد.
+        </p>
+      </div>
+      
+      <div class="story-section">
+        <h2>فروپاشی کامل و پایان امپراتوری سلوکی</h2>
+        <p>
+          با ادامه روند ضعف‌ها و شکست‌های نظامی، دیگر توانایی حفظ اتحاد و یکپارچگی وجود نداشت. در نهایت، آخرین پادشاهان سلوکی مجبور به تسلیم و کنار رفتن شدند. امپراتوری سلوکی رسماً در نیمه دوم قرن دوم پیش از میلاد پایان یافت و قلمروهای آن به حکومت‌ها و قدرت‌های جدید واگذار شد. این پایان، سرآغاز دوران جدیدی در تاریخ خاورمیانه بود که شاهد ظهور قدرت‌هایی چون اشکانیان و بطلمیوس‌ها بود.
+        </p>
+      </div>
+      
+</body>
+</html>
