@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>نطق راز | ساسانیان</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
@@ -55,12 +55,13 @@
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
         }
 
+        /* =================== تایم‌لاین =================== */
         .timeline {
             position: relative;
             max-width: 900px;
             margin: 40px auto;
         }
-
+    
         .timeline::after {
             content: '';
             position: absolute;
@@ -72,14 +73,14 @@
             margin-right: -3px;
             border-radius: 3px;
         }
-
+    
         .timeline-item {
             padding: 10px 40px;
             position: relative;
             width: 50%;
             box-sizing: border-box;
         }
-
+    
         .timeline-item::after {
             content: '';
             position: absolute;
@@ -92,15 +93,15 @@
             border-radius: 50%;
             z-index: 1;
         }
-
+    
         .right {
             right: 50%;
         }
-
+    
         .left {
             right: 0;
         }
-
+    
         .timeline-content {
             padding: 20px;
             background: #222;
@@ -109,54 +110,63 @@
             position: relative;
             transition: transform 0.3s ease;
         }
-
+    
         .timeline-content:hover {
             transform: scale(1.03);
         }
-
+    
         .timeline-content h3 {
             color: #FFD700;
             margin-top: 0;
             font-size: 1.5rem;
         }
-
+    
         .timeline-content p {
             margin: 15px 0;
             line-height: 1.6;
             color: #ddd;
         }
+        /* =================== پایان تایم‌لاین =================== */
 
-        .timeline-content a {
+        /* دکمه یکنواخت و جذاب */
+        a.button-link {
             display: inline-block;
-            margin-top: 10px;
-            color: #FFD700;
-            text-decoration: none;
+            margin-top: 15px;
+            background-color: #FFD700;
+            color: #121212;
             font-weight: bold;
-            transition: color 0.3s ease;
+            padding: 10px 18px;
+            border-radius: 25px;
+            text-decoration: none;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
         }
-
-        .timeline-content a:hover {
-            color: #fff;
+    
+        a.button-link:hover {
+            background-color: #ffec70;
+            color: #000;
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 235, 70, 0.9);
         }
-
+    
         .king-section {
             text-align: center;
             margin: 60px 0;
         }
-
+    
         .king-section h2 {
             color: #FFD700;
             font-size: 2.5rem;
             margin-bottom: 30px;
         }
-
+    
         .king-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             padding: 20px;
         }
-
+    
         .king-card {
             background: #222;
             border: 2px solid #FFD700;
@@ -164,21 +174,21 @@
             padding: 20px;
             transition: transform 0.3s ease;
         }
-
+    
         .king-card:hover {
             transform: translateY(-10px);
         }
-
+    
         .king-card h3 {
             color: #FFD700;
             margin: 10px 0;
         }
-
+    
         .king-card p {
             color: #ddd;
             line-height: 1.5;
         }
-
+    
         .back-button {
             position: fixed;
             bottom: 30px;
@@ -193,7 +203,7 @@
             transition: transform 0.3s ease;
             z-index: 100;
         }
-
+    
         .back-button:hover {
             transform: scale(1.1);
         }
@@ -220,7 +230,7 @@
                 <div class="timeline-content">
                     <h3>قیام اردشیر</h3>
                     <p>چگونه اردشیر بابکان توانست اشکانیان را شکست دهد و امپراتوری ساسانی را بنیان نهد.</p>
-                    <a href="sasanian/ghiam.html">مطالعه بیشتر...</a>
+                    <a href="sasanian/ghiyam_ardeshir.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -228,7 +238,7 @@
                 <div class="timeline-content">
                     <h3>عصر شاپور</h3>
                     <p>دوران طلایی شاپور اول و پیروزی‌های درخشان بر امپراتوری روم</p>
-                    <a href="sasanian/shapur.html">مطالعه بیشتر...</a>
+                    <a href="sasanian/asre_shapurss.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -236,7 +246,7 @@
                 <div class="timeline-content">
                     <h3>اصلاحات خسرو</h3>
                     <p>اصلاحات گسترده خسرو انوشیروان در نظام اداری، مالیاتی و نظامی</p>
-                    <a href="sasanian/khosrow.html">مطالعه بیشتر...</a>
+                    <a href="sasanian/eslahat_khosro.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
 
@@ -244,7 +254,7 @@
                 <div class="timeline-content">
                     <h3>واپسین روزها</h3>
                     <p>جنگ‌های طولانی با روم، ظهور اسلام و سقوط امپراتوری ساسانی</p>
-                    <a href="sasanian/end.html">مطالعه بیشتر...</a>
+                    <a href="sasanian/vapasin_roozha.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
             </div>
         </div>
@@ -254,31 +264,36 @@
             <div class="king-cards">
                 <div class="king-card">
                     <h3>اردشیر بابکان</h3>
-                    <p>بنیانگذار شاهنشاهی ساسانی و احیاگر شکوه ایران (۲۲۴-۲۴۲)</p>
+                    <p>بنیانگذار سلسله ساسانی و فاتح امپراتوری اشکانیان.</p>
+                    <a href="sasanian/ardeshir_babakan.html"class="button-link">مطالعه بیشتر...</a>
                 </div>
-
                 <div class="king-card">
-                    <h3>شاپور یکم</h3>
-                    <p>فاتح بزرگ و شکست‌دهنده سه امپراتور روم (۲۴۲-۲۷۲)</p>
+                    <h3>شاپور اول</h3>
+                    <p>شاه جنگجو و فاتح روم، توسعه‌دهنده فرهنگ و هنر ساسانی.</p>
+                    <a href="sasanian/shapur_i.html"class="button-link">مطالعه بیشتر...</a>
                 </div>
-
                 <div class="king-card">
                     <h3>خسرو انوشیروان</h3>
-                    <p>دادگرترین پادشاه ساسانی و اصلاح‌گر نظام کشور (۵۳۱-۵۷۹)</p>
+                    <p>شاه عدالت و اصلاحات، که ایران را به اوج قدرت و نظم رساند.</p>
+                    <a href="sasanian/khosrow_anushirvan.html" class="button-link">مطالعه بیشتر...</a>
                 </div>
-
+                
                 <div class="king-card">
                     <h3>خسرو پرویز</h3>
-                    <p>آخرین شاه قدرتمند ساسانی و فرمانروای عصر طلایی (۵۹۰-۶۲۸)</p>
+                    <p>خسرو پرویز آخرین پادشاه ساسانی</p>
+                    <a href="sasanian/khosrow_purviz.html" class="button-link">مطالعه بیشتر...</a>
+                </div>
+                
                 </div>
             </div>
         </section>
+
     </main>
 
-    <a href="dynasties.html" class="back-button">بازگشت به صفحه دوران باستان</a>
+    <a href="index.html" class="back-button">بازگشت به خانه</a>
 
     <footer>
-        <p>© 2025 نطق راز | طراحی شده با عشق</p>
+        © ۱۴۰۲ نطق راز - همه حقوق محفوظ است
     </footer>
 </body>
-</html> 
+</html>

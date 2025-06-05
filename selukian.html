@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>نطق راز | سلوکیان</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
-    
+
+        /* پایه */
         body {
             font-family: 'Vazir', Tahoma, sans-serif;
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             background-color: #121212;
             color: #f1f1f1;
             line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
-    
+
+        /* هدر معرفی */
         .intro-header {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                        url('images/drafsh_mad_ha.png') no-repeat center center/cover;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('images/drafsh_mad_ha.png') no-repeat center center / cover;
             height: 400px;
             display: flex;
             flex-direction: column;
@@ -27,7 +30,6 @@
             text-align: center;
             padding: 0 20px;
         }
-    
         .intro-header h1 {
             font-family: 'Vazir', serif;
             font-weight: 900;
@@ -36,7 +38,6 @@
             margin-bottom: 0.3em;
             text-shadow: 2px 2px 6px #000;
         }
-    
         .intro-header p {
             font-size: 1.3rem;
             max-width: 700px;
@@ -45,7 +46,8 @@
             line-height: 1.5;
             text-shadow: 1px 1px 5px #000;
         }
-    
+
+        /* بدنه اصلی */
         main {
             padding: 40px 20px;
             max-width: 1100px;
@@ -54,13 +56,13 @@
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
         }
-    
+
+        /* خط زمان */
         .timeline {
             position: relative;
             max-width: 900px;
             margin: 40px auto;
         }
-    
         .timeline::after {
             content: '';
             position: absolute;
@@ -72,14 +74,12 @@
             margin-right: -3px;
             border-radius: 3px;
         }
-    
         .timeline-item {
             padding: 10px 40px;
             position: relative;
             width: 50%;
             box-sizing: border-box;
         }
-    
         .timeline-item::after {
             content: '';
             position: absolute;
@@ -91,42 +91,39 @@
             top: 15px;
             border-radius: 50%;
             z-index: 1;
+            transition: background-color 0.3s ease;
         }
-    
         .right {
             right: 50%;
         }
-    
         .left {
             right: 0;
         }
-    
         .timeline-content {
             padding: 20px;
             background: #222;
             border: 2px solid #FFD700;
             border-radius: 12px;
             position: relative;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
         }
-    
         .timeline-content:hover {
             transform: scale(1.03);
+            box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
         }
-    
         .timeline-content h3 {
             color: #FFD700;
             margin-top: 0;
             font-size: 1.5rem;
         }
-    
         .timeline-content p {
             margin: 15px 0;
             line-height: 1.6;
             color: #ddd;
         }
-    
-        /* دکمه یکنواخت و جذاب */
+
+        /* دکمه‌های لینک */
         a.button-link {
             display: inline-block;
             margin-top: 15px;
@@ -137,56 +134,53 @@
             border-radius: 25px;
             text-decoration: none;
             box-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
         }
-    
         a.button-link:hover {
             background-color: #ffec70;
             color: #000;
             transform: scale(1.1);
             box-shadow: 0 0 15px rgba(255, 235, 70, 0.9);
         }
-    
+
+        /* بخش فرمانروایان */
         .king-section {
             text-align: center;
             margin: 60px 0;
         }
-    
         .king-section h2 {
             color: #FFD700;
             font-size: 2.5rem;
             margin-bottom: 30px;
         }
-    
         .king-cards {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
             padding: 20px;
         }
-    
         .king-card {
             background: #222;
             border: 2px solid #FFD700;
             border-radius: 12px;
             padding: 20px;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
         }
-    
         .king-card:hover {
             transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
         }
-    
         .king-card h3 {
             color: #FFD700;
             margin: 10px 0;
         }
-    
         .king-card p {
             color: #ddd;
             line-height: 1.5;
         }
-    
+
+        /* دکمه بازگشت */
         .back-button {
             position: fixed;
             bottom: 30px;
@@ -198,14 +192,15 @@
             text-decoration: none;
             font-weight: bold;
             box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
             z-index: 100;
         }
-    
         .back-button:hover {
             transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
         }
-    
+
+        /* فوتر */
         footer {
             margin-top: 80px;
             text-align: center;
@@ -213,6 +208,24 @@
             font-size: 14px;
             color: #aaa;
             user-select: none;
+        }
+
+        /* ریسپانسیو */
+        @media (max-width: 768px) {
+            .timeline-item, .timeline::after {
+                right: 0 !important;
+                width: 100% !important;
+            }
+            .timeline::after {
+                left: 30px;
+            }
+            .timeline-item::after {
+                right: auto !important;
+                left: 18px !important;
+            }
+            .timeline-content {
+                margin-left: 60px;
+            }
         }
     </style>
 </head>
@@ -260,37 +273,30 @@
         <section class="king-section">
             <h2>فرمانروایان مهم سلوکی</h2>
             <div class="king-cards">
-                <div class="king-card">
-                    <h3>سلوکوس اول نیکاتور</h3>
-                    <p>بنیانگذار سلسله سلوکی و سازنده شهر سلوکیه (۳۱۲-۲۸۱ پ.م)</p>
-                    <a href="#" class="button-link">مطالعه بیشتر...</a>
-                </div>
-
-                <div class="king-card">
+                <article class="king-card">
+                    <h3>سلوکوس یکم</h3>
+                    <p>بنیان‌گذار سلسله سلوکیان، جانشین اسکندر در بخش شرقی امپراتوری بزرگ هخامنشی.</p>
+                </article>
+                <article class="king-card">
                     <h3>آنتیوخوس سوم</h3>
-                    <p>بزرگترین پادشاه سلوکی که قلمرو را تا هند گسترش داد (۲۲۳-۱۸۷ پ.م)</p>
-                    <a href="#" class="button-link">مطالعه بیشتر...</a>
-                </div>
-
-                <div class="king-card">
-                    <h3>آنتیوخوس چهارم اپیفانس</h3>
-                    <p>پادشاه مقتدری که سعی در گسترش فرهنگ یونانی داشت (۱۷۵-۱۶۴ پ.م)</p>
-                    <a href="#" class="button-link">مطالعه بیشتر...</a>
-                </div>
-
-                <div class="king-card">
-                    <h3>آنتیوخوس هفتم سیدتس</h3>
-                    <p>آخرین پادشاه قدرتمند سلوکی که با اشکانیان جنگید (۱۳۸-۱۲۹ پ.م)</p>
-                    <a href="#" class="button-link">مطالعه بیشتر...</a>
-                </div>
+                    <p>پادشاه مقتدر سلوکی که قلمرو را تا مصر و هند گسترش داد و با روم مقابله کرد.</p>
+                </article>
+                <article class="king-card">
+                    <h3>سلوکوس دوم</h3>
+                    <p>دوران پایداری نسبی و تثبیت حکومت پس از جنگ‌های داخلی.</p>
+                </article>
+                <article class="king-card">
+                    <h3>دیمیتریوس یکم</h3>
+                    <p>معروف به دیمیتریوس پولئوس، فاتح بخش‌هایی از هند و گسترش قلمرو سلوکیان.</p>
+                </article>
             </div>
         </section>
     </main>
 
-    <a href="dynasties.html" class="back-button">بازگشت به صفحه دوران باستان</a>
+    <a href="../../index.html" class="back-button">بازگشت به خانه</a>
 
     <footer>
-        <p>© 2025 نطق راز | طراحی شده با عشق</p>
+        نطق راز - © ۱۴۰۲
     </footer>
 </body>
-</html> 
+</html>
