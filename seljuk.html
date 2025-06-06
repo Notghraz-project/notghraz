@@ -101,8 +101,8 @@
 
     .achievements {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
       margin-top: 20px;
     }
 
@@ -110,12 +110,27 @@
       background: #2a2a2a;
       border: 1px solid #FFD700;
       border-radius: 10px;
-      padding: 20px;
+      padding: 25px;
+      text-decoration: none;
+      color: #f1f1f1;
+      transition: all 0.3s ease;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
     }
 
     .achievement-card h3 {
       color: #FFD700;
       margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .achievement-card p {
+      color: #f1f1f1;
+      margin: 0;
+      line-height: 1.6;
     }
 
     .back-button {
@@ -187,17 +202,17 @@
     <div class="section">
       <h2>دستاوردهای مهم</h2>
       <div class="achievements">
-        <a href="achievements/seljuk/military" class="achievement-card">
+        <a href="achievements/seljuk/military.html" class="achievement-card">
           <h3>دستاوردهای نظامی</h3>
-          <p>فتوحات گسترده، نبرد ملازگرد، و تشکیل بزرگترین امپراتوری ترک-ایرانی.</p>
+          <p>فتوحات گسترده، نبرد ملازگرد و سازماندهی نظامی</p>
         </a>
-        <a href="achievements/seljuk/culture" class="achievement-card">
-          <h3>میراث فرهنگی</h3>
-          <p>شکوفایی معماری و هنر ایرانی-اسلامی، مساجد چهار ایوانی، و رونق ادبیات.</p>
+        <a href="achievements/seljuk/culture.html" class="achievement-card">
+          <h3>دستاوردهای فرهنگی</h3>
+          <p>معماری شکوهمند، هنر و ادبیات درخشان</p>
         </a>
-        <a href="achievements/seljuk/governance" class="achievement-card">
-          <h3>نظام حکومتی</h3>
-          <p>تأسیس مدارس نظامیه، نظام اقطاع، و توسعه تجارت بین‌المللی.</p>
+        <a href="achievements/seljuk/governance.html" class="achievement-card">
+          <h3>دستاوردهای حکومتی</h3>
+          <p>نظام اداری، مدارس نظامیه و سیاست‌های اقتصادی</p>
         </a>
       </div>
     </div>
@@ -221,7 +236,7 @@
     </div>
   </div>
 
-  <a href="islamic_period" class="back-button">بازگشت به صفحه دوران اسلامی</a>
+  <a href="islamic_period.html" class="back-button">بازگشت به صفحه دوران اسلامی</a>
 
   <footer>
     <p>© 2025 نطق راز | طراحی شده با عشق به تاریخ ایران</p>

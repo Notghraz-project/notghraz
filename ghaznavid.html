@@ -101,8 +101,8 @@
 
     .achievements {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
       margin-top: 20px;
     }
 
@@ -110,12 +110,27 @@
       background: #2a2a2a;
       border: 1px solid #FFD700;
       border-radius: 10px;
-      padding: 20px;
+      padding: 25px;
+      text-decoration: none;
+      color: #f1f1f1;
+      transition: all 0.3s ease;
+    }
+
+    .achievement-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
     }
 
     .achievement-card h3 {
       color: #FFD700;
       margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+
+    .achievement-card p {
+      color: #f1f1f1;
+      margin: 0;
+      line-height: 1.6;
     }
 
     .back-button {
@@ -187,17 +202,17 @@
     <div class="section">
       <h2>دستاوردهای مهم</h2>
       <div class="achievements">
-        <a href="achievements/ghaznavid/military" class="achievement-card">
+        <a href="achievements/ghaznavid/military.html" class="achievement-card">
           <h3>دستاوردهای نظامی</h3>
-          <p>فتوحات گسترده در هند و ایران، تشکیل ارتش قدرتمند، و توسعه فنون جنگی.</p>
+          <p>فتوحات گسترده، سازماندهی ارتش و پیشرفت‌های نظامی</p>
         </a>
-        <a href="achievements/ghaznavid/culture" class="achievement-card">
-          <h3>میراث فرهنگی</h3>
-          <p>حمایت از شعر و ادب فارسی، توسعه هنر و معماری، و تلفیق فرهنگ‌های مختلف.</p>
+        <a href="achievements/ghaznavid/culture.html" class="achievement-card">
+          <h3>دستاوردهای فرهنگی</h3>
+          <p>شکوفایی ادبی و هنری، معماری و فرهنگ</p>
         </a>
-        <a href="achievements/ghaznavid/science" class="achievement-card">
+        <a href="achievements/ghaznavid/science.html" class="achievement-card">
           <h3>دستاوردهای علمی</h3>
-          <p>حمایت از دانشمندان، تأسیس مراکز علمی، و پیشرفت در علوم مختلف.</p>
+          <p>پیشرفت‌های علمی، حمایت از دانشمندان و مراکز علمی</p>
         </a>
       </div>
     </div>
@@ -221,7 +236,7 @@
     </div>
   </div>
 
-  <a href="islamic_period" class="back-button">بازگشت به صفحه دوران اسلامی</a>
+  <a href="islamic_period.html" class="back-button">بازگشت به صفحه دوران اسلامی</a>
 
   <footer>
     <p>© 2025 نطق راز | طراحی شده با عشق به تاریخ ایران</p>
