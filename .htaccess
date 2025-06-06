@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# حذف پسوند .html از URL
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
