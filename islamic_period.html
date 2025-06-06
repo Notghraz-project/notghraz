@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نطق راز | دوران اسلامی از خلفای راشدین تا خوارزمشاهیان</title>
+
+  <style>
+    @import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+
+    body {
+      font-family: 'Vazir', Tahoma, sans-serif;
+      margin: 0;
+      background-color: #121212;
+      color: #f1f1f1;
+      direction: rtl;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+              url('images/khelafat_eslami.png') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      color: #FFD700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      color: #fff8b0;
+      max-width: 800px;
+      line-height: 1.6;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+    }
+
+    .periods {
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .period-card {
+      background: #1e1e1e;
+      border: 2px solid #FFD700;
+      border-radius: 15px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .period-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+    }
+
+    .period-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .period-content {
+      padding: 20px;
+    }
+
+    .period-content h2 {
+      color: #FFD700;
+      margin: 0 0 15px 0;
+      font-size: 1.8rem;
+    }
+
+    .period-content p {
+      color: #ddd;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .period-date {
+      color: #FFD700;
+      font-size: 0.9rem;
+      margin-top: 15px;
+      display: block;
+    }
+
+    .back-button {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      background: #FFD700;
+      color: #121212;
+      padding: 15px 25px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .back-button:hover {
+      transform: scale(1.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      margin-top: 50px;
+    }
+
+    footer p {
+      color: #aaa;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>دوران اسلامی</h1>
+    <p>از خلافت راشدین تا پایان خوارزمشاهیان</p>
+  </section>
+
+  <div class="periods">
+    <a href="rashidun.html" class="period-card">
+      <img src="images/rashidun.png" alt="خلفای راشدین" class="period-image">
+      <div class="period-content">
+        <h2>خلفای راشدین</h2>
+        <p>دوران چهار خلیفه نخست اسلام که با خلافت ابوبکر آغاز و با شهادت علی (ع) به پایان رسید. این دوره با فتوحات گسترده و گسترش اسلام همراه بود.</p>
+        <span class="period-date">۱۱ تا ۴۰ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="umayyad.html" class="period-card">
+      <img src="images/umayyad.png" alt="امویان" class="period-image">
+      <div class="period-content">
+        <h2>امویان</h2>
+        <p>نخستین سلسله موروثی خلافت اسلامی که با معاویه آغاز شد. این دوره با گسترش قلمرو اسلامی و در عین حال تبعیض علیه غیر اعراب همراه بود.</p>
+        <span class="period-date">۴۱ تا ۱۳۲ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="abbasid.html" class="period-card">
+      <img src="images/abbasid.png" alt="عباسیان" class="period-image">
+      <div class="period-content">
+        <h2>عباسیان</h2>
+        <p>دوران طلایی تمدن اسلامی که با قیام ابومسلم خراسانی آغاز شد. این عصر با شکوفایی علم، هنر و فرهنگ اسلامی-ایرانی همراه بود.</p>
+        <span class="period-date">۱۳۲ تا ۶۵۶ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="tahirian.html" class="period-card">
+      <img src="images/tahirian.png" alt="طاهریان" class="period-image">
+      <div class="period-content">
+        <h2>طاهریان</h2>
+        <p>نخستین سلسله مستقل ایرانی پس از اسلام که با حکومت طاهر ذوالیمینین آغاز شد و به احیای فرهنگ و زبان فارسی کمک شایانی کرد.</p>
+        <span class="period-date">۲۰۵ تا ۲۵۹ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="saffarid.html" class="period-card">
+      <img src="images/saffarid.png" alt="صفاریان" class="period-image">
+      <div class="period-content">
+        <h2>صفاریان</h2>
+        <p>سلسله‌ای که با یعقوب لیث از سیستان برخاست و نخستین حکومت مردمی ایران پس از اسلام را بنیان نهاد.</p>
+        <span class="period-date">۲۵۴ تا ۲۹۰ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="samanid.html" class="period-card">
+      <img src="images/samanid.png" alt="سامانیان" class="period-image">
+      <div class="period-content">
+        <h2>سامانیان</h2>
+        <p>عصر رنسانس فرهنگ و ادب فارسی که با حمایت از دانشمندان و شاعران، دوران زرینی از هنر و ادبیات ایرانی را رقم زدند.</p>
+        <span class="period-date">۲۶۱ تا ۳۸۹ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="ghaznavid.html" class="period-card">
+      <img src="images/ghaznavid.png" alt="غزنویان" class="period-image">
+      <div class="period-content">
+        <h2>غزنویان</h2>
+        <p>امپراتوری قدرتمندی که با سلطان محمود به اوج رسید و دربارش محل تجمع بزرگترین شاعران و دانشمندان ایرانی بود.</p>
+        <span class="period-date">۳۵۱ تا ۵۸۲ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="seljuk.html" class="period-card">
+      <img src="images/seljuq.png" alt="سلجوقیان" class="period-image">
+      <div class="period-content">
+        <h2>سلجوقیان</h2>
+        <p>دوران اوج معماری و هنر اسلامی-ایرانی که با ساخت مساجد، مدارس و کاروانسراهای باشکوه همراه بود.</p>
+        <span class="period-date">۴۲۹ تا ۵۹۰ هجری قمری</span>
+      </div>
+    </a>
+
+    <a href="khwarazmian.html" class="period-card">
+      <img src="images/khwarazmian.png" alt="خوارزمشاهیان" class="period-image">
+      <div class="period-content">
+        <h2>خوارزمشاهیان</h2>
+        <p>آخرین امپراتوری بزرگ ایرانی پیش از حمله مغول که با سلطان محمد به اوج قدرت رسید و با حمله چنگیز به پایان رسید.</p>
+        <span class="period-date">۴۷۰ تا ۶۲۸ هجری قمری</span>
+      </div>
+    </a>
+  </div>
+
+  <a href="historical_periods.html" class="back-button">بازگشت به صفحه دوره‌های تاریخی</a>
+
+  <footer>
+    <p>© 2025 نطق راز | طراحی شده با عشق به تاریخ ایران</p>
+  </footer>
+</body>
+</html> 
